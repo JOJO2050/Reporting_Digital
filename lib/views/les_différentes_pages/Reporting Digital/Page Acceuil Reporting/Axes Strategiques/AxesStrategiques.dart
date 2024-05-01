@@ -14,6 +14,7 @@ import 'FooterAxesStrategiques.dart';
 
 import 'SecondLineAxesStrategiques.dart';
 import 'firtsLineAxesStrategiques.dart';
+import 'ligneRetourAxesStrategique.dart';
 
 class AxesStrategiquesPage extends StatefulWidget {
   const AxesStrategiquesPage({super.key});
@@ -51,6 +52,9 @@ class _AxesStrategiquesPageState extends State<AxesStrategiquesPage> {
                 ),
               ],
             ),
+            const Divider(height: 2, color: Colors.black, thickness: 0.2),
+            const SizedBox(child: LigneretourAxesStrategique()),
+            const Divider(height: 2, color: Colors.black, thickness: 0.2),
             Stack(
               children: [
                 Image.asset('assets/images/fond_accueil.jpg'),

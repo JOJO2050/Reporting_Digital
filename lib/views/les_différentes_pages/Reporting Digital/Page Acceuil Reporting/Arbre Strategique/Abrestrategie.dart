@@ -31,9 +31,9 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
                 SizedBox(height: 10),
-                Divider(height: 2, color: Colors.black, thickness: 0.2),
+                /*  Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 70, child: secondLineStrategie()),
-                Divider(height: 2, color: Colors.black, thickness: 0.2),
+                Divider(height: 2, color: Colors.black, thickness: 0.2), */
               ],
             ),
             Stack(
