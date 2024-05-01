@@ -50,10 +50,10 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
             const Divider(height: 2, color: Colors.black, thickness: 0.2),
             Stack(
               children: [
-                Image.asset('assets/images/fond_accueil7.jpg'),
+                Image.asset('assets/images/fond_accueil.jpg'),
                 const Column(
                   children: [
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 10),
                     SizedBox(child: lignesTextArbreStrategique()),
                   ],
                 ),
