@@ -5,6 +5,7 @@ import 'FooterAbreStrategique.dart';
 
 import 'SecondLineAbreStrategique.dart';
 import 'firtsLineAbreStrategique.dart';
+import 'ligneRetourArbreStrategique.dart';
 import 'lignesDesPhrasesArbreStrategique.dart';
 
 class ArbreStrategiePage extends StatefulWidget {
@@ -36,6 +37,7 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2), */
               ],
             ),
+
             Stack(
               children: [
                 Image.asset(
@@ -43,12 +45,15 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
                 ),
               ],
             ),
+            const Divider(height: 2, color: Colors.black, thickness: 0.2),
+            const SizedBox(child: const LigneretourArbreStrategique()),
+            const Divider(height: 2, color: Colors.black, thickness: 0.2),
             Stack(
               children: [
                 Image.asset('assets/images/fond_accueil7.jpg'),
                 const Column(
                   children: [
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 8),
                     SizedBox(child: lignesTextArbreStrategique()),
                   ],
                 ),

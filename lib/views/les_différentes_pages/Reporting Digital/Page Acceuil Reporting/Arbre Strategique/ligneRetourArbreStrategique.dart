@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../Page Acceuil Reporting/AccueilReporting.dart';
 
-class LigneretourAxesStrategique extends StatelessWidget {
-  const LigneretourAxesStrategique({super.key});
+class LigneretourArbreStrategique extends StatelessWidget {
+  const LigneretourArbreStrategique({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class LigneretourAxesStrategique extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 15,
                     color: Color.fromARGB(255, 163, 52, 52)))),
-        const Text("=>> Axes Strategiques",
+        const Text("=>> Arbre Strategique",
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 10,
