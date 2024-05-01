@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner:
             false, // Permet Désactiver le debug banner (enlever la bande rouge)
-        home: ArbreStrategiePage(),
+        home: accueilPageReporting(),
 
         //--------------------------------------------------------------------
         // Toutes les routes du projets definir ici
