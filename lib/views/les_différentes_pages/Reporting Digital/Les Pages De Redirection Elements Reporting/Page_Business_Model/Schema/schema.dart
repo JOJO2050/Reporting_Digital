@@ -17,16 +17,16 @@ class _SchemaPageState extends State<SchemaPage> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Column(
+            const Column(
               children: [
                 SizedBox(height: 60, child: firstLineschema()),
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 10),
-                Divider(height: 2, color: Colors.black, thickness: 0.2),
+                const Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
                 SizedBox(height: 10),
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
@@ -34,22 +34,29 @@ class _SchemaPageState extends State<SchemaPage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
               ],
             ),
-            /* Stack(
+            Stack(
               children: [
-                Image.asset(
-                  photoFond,
-                ),
-                const SizedBox(child: grandTitre()),
+                Image.asset('assets/images/schema.png'),
               ],
-            ), */
-            SizedBox(height: 15),
+            ),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    SizedBox(height: 15),
 
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    // ignore: unnecessary_const
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
 
-            //const SizedBox(child: slide()),
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    //const SizedBox(child: slide()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                  ],
+                ),
+              ],
+            ),
 
-            SizedBox(child: footerschema()),
+            const SizedBox(child: footerschema()),
             //
 
             //

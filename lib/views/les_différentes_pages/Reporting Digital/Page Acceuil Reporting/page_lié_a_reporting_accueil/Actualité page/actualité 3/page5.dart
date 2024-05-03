@@ -6,12 +6,7 @@ class thirdButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => pageActualite3()),
-        );
-      },
+      onPressed: () {},
       child: Text('Voir plus'),
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(

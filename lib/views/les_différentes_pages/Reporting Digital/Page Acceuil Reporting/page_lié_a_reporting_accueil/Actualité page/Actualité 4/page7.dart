@@ -6,12 +6,7 @@ class fourthButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => pageActualite4()),
-        );
-      },
+      onPressed: () {},
       child: Text('Voir plus'),
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(

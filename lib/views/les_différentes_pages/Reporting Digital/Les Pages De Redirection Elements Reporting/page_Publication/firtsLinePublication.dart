@@ -30,7 +30,7 @@ class firstLinePublication extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 300),
-            const Text(" Reporting Integré Année 2024",
+            const Text(" Reporting Integré ",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 22,

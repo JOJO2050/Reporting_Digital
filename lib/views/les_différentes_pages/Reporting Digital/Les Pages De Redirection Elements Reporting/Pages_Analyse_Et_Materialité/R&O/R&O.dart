@@ -19,7 +19,7 @@ class _RetOPageState extends State<RetOPage> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
@@ -37,12 +37,27 @@ class _RetOPageState extends State<RetOPage> {
               ],
             ),
 
-            SizedBox(height: 15),
+            Stack(
+              children: [
+                Image.asset('assets/images/RISQ.png'),
+              ],
+            ),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    SizedBox(height: 15),
 
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    // ignore: unnecessary_const
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
 
-            //const SizedBox(child: slide()),
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    //const SizedBox(child: slide()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                  ],
+                ),
+              ],
+            ),
 
             SizedBox(child: footerPartieRetO()),
             //

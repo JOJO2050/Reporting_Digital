@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../Page Acceuil Reporting/page_lié_a_reporting_accueil/contenuAccueilReporting.dart';
+import '../../../Page Acceuil Reporting/page_lié_a_reporting_accueil/grand_titre_Reporting.dart';
 import '../../../la_page_accueil/page_lié_a_accueil/BarreRechercheReporting.dart';
 import 'FooterOrgane.dart';
 import 'SecondLineOrgane.dart';
@@ -17,14 +19,14 @@ class _OrganePageState extends State<OrganePage> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Column(
+            const Column(
               children: [
                 SizedBox(height: 60, child: firstLineOrgnane()),
-                Divider(height: 2, color: Colors.black, thickness: 0.2),
+                const Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 10),
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
@@ -34,22 +36,29 @@ class _OrganePageState extends State<OrganePage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
               ],
             ),
-            /* Stack(
+            Stack(
               children: [
-                Image.asset(
-                  photoFond,
-                ),
-                const SizedBox(child: grandTitre()),
+                Image.asset('assets/images/organe.png'),
               ],
-            ), */
-            SizedBox(height: 15),
+            ),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    SizedBox(height: 15),
 
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    // ignore: unnecessary_const
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
 
-            //const SizedBox(child: slide()),
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    //const SizedBox(child: slide()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                  ],
+                ),
+              ],
+            ),
 
-            SizedBox(child: footerOrgane()),
+            const SizedBox(child: footerOrgane()),
             //
 
             //

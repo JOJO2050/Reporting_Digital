@@ -21,13 +21,12 @@ class _secondLigneReportingState extends State<secondLigneReporting> {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          // SizedBox(child: buttonBusinessModel()),
-          // const SizedBox(width: 30),
+          /*  SizedBox(child: buttonBusinessModel()),
+          const SizedBox(width: 30), */
           SizedBox(
             child: boutonStrategieDd(),
           ),
-          /*
-          const SizedBox(width: 30),
+          /*  const SizedBox(width: 30),
           SizedBox(child: buttonAnalyseMaterialite()),
           const SizedBox(width: 30),
           SizedBox(child: buttonPerformanceEsg()),
