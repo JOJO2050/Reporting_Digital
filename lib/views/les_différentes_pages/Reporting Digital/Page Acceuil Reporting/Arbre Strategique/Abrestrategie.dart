@@ -41,7 +41,7 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
             Stack(
               children: [
                 Image.asset(
-                  'assets/images/Abre.PNG',
+                  'assets/images/ARBRENEW.png',
                 ),
               ],
             ),
