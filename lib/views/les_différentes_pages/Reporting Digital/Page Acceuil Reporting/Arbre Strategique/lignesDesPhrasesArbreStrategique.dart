@@ -67,29 +67,39 @@ class _lignesTextArbreStrategiqueState
           ],
         ),
         const SizedBox(height: 10),
-        MouseRegion(
-          onEnter: (_) {
-            setState(() {
-              isHovered = true;
-            });
+        const SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  content: Image.asset(
+                    'assets/images/show1.jpg',
+                  ),
+                );
+              },
+            );
           },
-          onExit: (_) {
-            setState(() {
-              isHovered = false;
-            });
-          },
-          child: Stack(
-            children: [
-              Image.asset(
-                'assets/images/strategieAbre.jpg',
-                width:
-                    isHovered ? 650 : 550, // Changer la largeur lors du survol
-                height:
-                    isHovered ? 650 : 550, // Changer la hauteur lors du survol
-              ),
-            ],
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+              if (states.contains(MaterialState.pressed)) {
+                // Couleur lorsque le bouton est cliqué
+                return Color.fromARGB(255, 236, 106, 55);
+                ;
+              } else if (states.contains(MaterialState.hovered)) {
+                // Couleur lorsque le bouton est survolé
+                return Color.fromARGB(255, 14, 13, 114);
+              }
+              // Couleur par défaut
+              return Color.fromARGB(255, 69, 70, 69);
+            }),
           ),
-        ),
+          child: Text(
+            "Voir Arbre Strategique",
+            style: TextStyle(color: Colors.white),
+          ),
+        )
       ],
     );
   }

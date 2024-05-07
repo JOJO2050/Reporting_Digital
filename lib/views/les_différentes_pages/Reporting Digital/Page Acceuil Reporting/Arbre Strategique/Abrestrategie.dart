@@ -32,16 +32,30 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
                 SizedBox(height: 10),
-                /*  Divider(height: 2, color: Colors.black, thickness: 0.2),
+                Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 70, child: secondLineStrategie()),
-                Divider(height: 2, color: Colors.black, thickness: 0.2), */
+                Divider(height: 2, color: Colors.black, thickness: 0.2),
               ],
             ),
 
             Stack(
               children: [
-                Image.asset(
-                  'assets/images/ARBRENEW.png',
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Abre strategique",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -50,7 +64,7 @@ class _ArbreStrategiePageState extends State<ArbreStrategiePage> {
             const Divider(height: 2, color: Colors.black, thickness: 0.2),
             Stack(
               children: [
-                Image.asset('assets/images/fond_accueil.jpg'),
+                Image.asset('assets/images/fond_accueil4.jpg'),
                 const Column(
                   children: [
                     const SizedBox(height: 10),

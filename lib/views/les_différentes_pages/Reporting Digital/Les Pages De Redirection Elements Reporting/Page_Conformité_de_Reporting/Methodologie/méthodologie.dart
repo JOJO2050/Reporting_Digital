@@ -17,14 +17,14 @@ class _MethodologiePageState extends State<MethodologiePage> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Column(
+            const Column(
               children: [
                 SizedBox(height: 60, child: firstLineMethodologie()),
-                Divider(height: 2, color: Colors.black, thickness: 0.2),
+                const Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 10),
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
@@ -35,14 +35,45 @@ class _MethodologiePageState extends State<MethodologiePage> {
               ],
             ),
 
-            SizedBox(height: 15),
+            Stack(
+              children: [
+                Image.asset('assets/images/livre.jpg'),
+                const Positioned(
+                  top: -5,
+                  left: 40,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Méthodologie et protocole du reporting",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 55,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    SizedBox(height: 15),
 
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    // ignore: unnecessary_const
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
 
-            //const SizedBox(child: slide()),
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    //const SizedBox(child: slide()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                  ],
+                ),
+              ],
+            ),
 
-            SizedBox(child: footerMethodologie()),
+            const SizedBox(child: footerMethodologie()),
             //
 
             //

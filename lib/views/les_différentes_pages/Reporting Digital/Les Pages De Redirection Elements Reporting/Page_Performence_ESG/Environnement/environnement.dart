@@ -17,7 +17,7 @@ class _EnvironnementPageState extends State<EnvironnementPage> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      body: const SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
@@ -35,12 +35,43 @@ class _EnvironnementPageState extends State<EnvironnementPage> {
               ],
             ),
 
-            SizedBox(height: 15),
+            Stack(
+              children: [
+                Image.asset('assets/images/foret.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Environnement",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    SizedBox(height: 15),
 
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    // ignore: unnecessary_const
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
 
-            //const SizedBox(child: slide()),
-            Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    //const SizedBox(child: slide()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                  ],
+                ),
+              ],
+            ),
 
             SizedBox(child: footerEnvironnement()),
             //

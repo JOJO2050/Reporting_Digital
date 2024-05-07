@@ -36,7 +36,23 @@ class _ContextePageState extends State<ContextePage> {
             ),
             Stack(
               children: [
-                Image.asset('assets/images/contexte.png'),
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Contexte",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Stack(

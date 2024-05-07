@@ -23,7 +23,7 @@ class LigneRetourPublication extends StatelessWidget {
             color: Color.fromARGB(255, 163, 52, 52),
           ),
         ),
-        const Text("=>> Publication Reporting",
+        const Text("=>> Publications Rapport",
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 12,

@@ -11,14 +11,24 @@ class logoTexteAxeStrategiqueBrefCom extends StatelessWidget {
         _buildIconCircle(
           'assets/icons/Monde.png',
           "COMMUNAUTE ET INNOVATION SOCIETAL",
+          "Enjeu 10", // Texte enjeu pour le cercle
         ),
       ],
     );
   }
 
-  Widget _buildIconCircle(String imagePath, String text) {
+  Widget _buildIconCircle(String imagePath, String text, String enjeuTexte) {
     return Column(
       children: [
+        Text(
+          enjeuTexte,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Color.fromARGB(255, 247, 164, 70),
+          ),
+        ),
+        SizedBox(height: 4),
         Container(
           width: 80,
           height: 80,
@@ -39,7 +49,7 @@ class logoTexteAxeStrategiqueBrefCom extends StatelessWidget {
           text,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 18,
+            fontSize: 16,
           ),
           textAlign: TextAlign.center,
         ),

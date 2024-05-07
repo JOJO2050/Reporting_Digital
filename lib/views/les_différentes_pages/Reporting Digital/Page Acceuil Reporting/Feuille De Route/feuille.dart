@@ -3,6 +3,8 @@ import '../../la_page_accueil/page_lié_a_accueil/BarreRechercheReporting.dart';
 import 'FooterFeuille.dart';
 import 'SecondLineFeuille.dart';
 import 'firtsLineFeuille.dart';
+import 'ligneRetourFeuille.dart';
+import 'lignesDesPhrasesFeuille.dart';
 
 class FeuillePage extends StatefulWidget {
   const FeuillePage({super.key});
@@ -35,18 +37,40 @@ class _FeuillePageState extends State<FeuillePage> {
             ),
             Stack(
               children: [
-                Image.asset(
-                  'assets/images/pop9.jpeg',
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Feuille de route",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 50,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 15),
-
             const Divider(height: 2, color: Colors.black, thickness: 0.2),
-
-            //const SizedBox(child: slide()),
+            const SizedBox(child: const LigneRetourFeuille()),
             const Divider(height: 2, color: Colors.black, thickness: 0.2),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil4.jpg'),
+                const Column(
+                  children: [
+                    const SizedBox(height: 10),
+                    SizedBox(child: lignesTextFeuile()),
+                  ],
+                ),
+              ],
+            ),
 
             const SizedBox(child: footerFeuille()),
             //

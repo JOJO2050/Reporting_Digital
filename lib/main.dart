@@ -5,6 +5,8 @@ import 'views/les_différentes_pages/Reporting Digital/Les Pages De Redirection 
 import 'views/les_différentes_pages/Reporting Digital/Les Pages De Redirection Elements Reporting/page_Publication/lignePublication.dart';
 import 'views/les_différentes_pages/Reporting Digital/Les Pages De Redirection Elements Reporting/page_Publication/publication.dart';
 import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Arbre Strategique/Abrestrategie.dart';
+import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Axes Strategiques/AxesStrategiques.dart';
+import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Politique DD/Politique.dart';
 
 void main() {
   runApp(const MyApp());

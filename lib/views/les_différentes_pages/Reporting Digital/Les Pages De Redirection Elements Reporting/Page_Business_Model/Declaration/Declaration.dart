@@ -34,17 +34,41 @@ class _DeclarationPageState extends State<DeclarationPage> {
                 Stack(
                   children: [
                     Image.asset('assets/images/fond_accueil.jpg'),
-                    const Column(
+                    Column(
                       children: [
-                        Divider(height: 2, color: Colors.black, thickness: 0.2),
-                        SizedBox(height: 70, child: secondLineDecla()),
-                        Divider(height: 2, color: Colors.black, thickness: 0.2),
-                        SizedBox(child: LigneAcceuilRetour()),
-                        Divider(height: 2, color: Colors.black, thickness: 0.2),
-                        SizedBox(height: 10),
-                        SizedBox(child: threeLineDeclaration()),
-                        SizedBox(height: 20),
-                        SizedBox(child: fourLineDeclaration()),
+                        const Divider(
+                            height: 2, color: Colors.black, thickness: 0.2),
+                        const SizedBox(height: 70, child: secondLineDecla()),
+                        Stack(
+                          children: [
+                            Image.asset('assets/images/sifca.png'),
+                            const Positioned(
+                              top: -5,
+                              left: 70,
+                              bottom: 5,
+                              child: Center(
+                                child: Text(
+                                  "Déclaration du dirigeant",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 50,
+                                    color: Color.fromARGB(255, 245, 201, 80),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Divider(
+                            height: 2, color: Colors.black, thickness: 0.2),
+                        const SizedBox(child: LigneAcceuilRetour()),
+                        const Divider(
+                            height: 2, color: Colors.black, thickness: 0.2),
+                        const SizedBox(height: 10),
+                        const SizedBox(child: threeLineDeclaration()),
+                        const SizedBox(height: 20),
+                        const SizedBox(child: fourLineDeclaration()),
                       ],
                     ),
                   ],

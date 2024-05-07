@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../Page Acceuil Reporting/page_lié_a_reporting_accueil/contenuAccueilReporting.dart';
 import '../../../Page Acceuil Reporting/page_lié_a_reporting_accueil/grand_titre_Reporting.dart';
 import '../../../la_page_accueil/page_lié_a_accueil/BarreRechercheReporting.dart';
+import '../Schema/ligneShema.dart';
 import 'FooterOrgane.dart';
 import 'SecondLineOrgane.dart';
 import 'firtsLineOrgane.dart';
@@ -38,14 +39,31 @@ class _OrganePageState extends State<OrganePage> {
             ),
             Stack(
               children: [
-                Image.asset('assets/images/organe.png'),
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 60,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Organe dirigeant",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Stack(
               children: [
                 Image.asset('assets/images/fond_accueil7.jpg'),
-                const Column(
+                Column(
                   children: [
+                    SizedBox(height: 70, child: ImageDialogButton()),
                     SizedBox(height: 15),
 
                     // ignore: unnecessary_const

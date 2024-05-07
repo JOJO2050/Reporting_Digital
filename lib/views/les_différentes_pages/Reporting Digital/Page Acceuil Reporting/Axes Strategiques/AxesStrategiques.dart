@@ -40,15 +40,29 @@ class _AxesStrategiquesPageState extends State<AxesStrategiquesPage> {
                 Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 60, child: SearchBarreReporting()),
                 SizedBox(height: 10),
-                /*  Divider(height: 2, color: Colors.black, thickness: 0.2),
+                Divider(height: 2, color: Colors.black, thickness: 0.2),
                 SizedBox(height: 70, child: secondLineAxesStrategiques()),
-                Divider(height: 2, color: Colors.black, thickness: 0.2), */
+                Divider(height: 2, color: Colors.black, thickness: 0.2),
               ],
             ),
             Stack(
               children: [
-                Image.asset(
-                  'assets/images/AXES-STRATE.png',
+                Image.asset('assets/images/document.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Axes stratégiques",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 55,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),

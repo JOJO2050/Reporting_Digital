@@ -39,7 +39,23 @@ class _RetOPageState extends State<RetOPage> {
 
             Stack(
               children: [
-                Image.asset('assets/images/RISQ.png'),
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 60,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "R&O (Risque et Opportunité)",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 50,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Stack(

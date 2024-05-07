@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import '../../la_page_accueil/page_lié_a_accueil/BarreRechercheReporting.dart';
 
 import 'FooterPolitique.dart';
+import 'LignePolitiqueTitre.dart';
 import 'SecondLinePolitique.dart';
 import 'firtsLinePolitique.dart';
+import 'ligneElement.dart';
+import 'ligneRetourPolitique.dart';
 
 class PolitiquePage extends StatefulWidget {
   const PolitiquePage({super.key});
@@ -40,12 +43,22 @@ class _PolitiquePageState extends State<PolitiquePage> {
               ],
             ),
 
-            const SizedBox(height: 15),
-
-            const Divider(height: 2, color: Colors.black, thickness: 0.2),
-
-            //const SizedBox(child: slide()),
-            const Divider(height: 2, color: Colors.black, thickness: 0.2),
+            Stack(
+              children: [
+                Image.asset('assets/images/fond_accueil7.jpg'),
+                const Column(
+                  children: [
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    SizedBox(child: LigneretourPolitique()),
+                    Divider(height: 2, color: Colors.black, thickness: 0.2),
+                    SizedBox(height: 15),
+                    SizedBox(child: lignePolitique1()),
+                    SizedBox(height: 15),
+                    SizedBox(child: ligneElementPolitique()),
+                  ],
+                ),
+              ],
+            ),
 
             const SizedBox(child: footerPolitique()),
             //

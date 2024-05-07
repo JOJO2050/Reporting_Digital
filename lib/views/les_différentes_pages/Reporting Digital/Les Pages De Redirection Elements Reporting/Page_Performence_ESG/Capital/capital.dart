@@ -36,7 +36,23 @@ class _CapitalPageState extends State<CapitalPage> {
             ),
             Stack(
               children: [
-                Image.asset('assets/images/capital.png'),
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 70,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Capital",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Stack(

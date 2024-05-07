@@ -37,7 +37,23 @@ class _CommuautelPageState extends State<CommuautelPage> {
 
             Stack(
               children: [
-                Image.asset('assets/images/COMMUNAUTE.png'),
+                Image.asset('assets/images/sifca.png'),
+                const Positioned(
+                  top: -5,
+                  left: 60,
+                  bottom: 5,
+                  child: Center(
+                    child: Text(
+                      "Communauté et développement",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 60,
+                        color: Color.fromARGB(255, 245, 201, 80),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Stack(

@@ -50,14 +50,14 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('   Reporting 2022   ',
+                  child: const Text('Rapport de DevelopPement durable 2022',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
               ],
             ),
             const SizedBox(
-              width: 200,
+              width: 100,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -92,14 +92,14 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('   Reporting 2019   ',
+                  child: const Text('Rapport de DevelopPement durable 2019',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
               ],
             ),
             const SizedBox(
-              width: 200,
+              width: 100,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -134,7 +134,7 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('   Reporting 2017   ',
+                  child: const Text('Rapport de DevelopPement durable 2017',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
@@ -181,14 +181,14 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('   Reporting 2016   ',
+                  child: const Text('Rapport de DevelopPement durable 2016',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
               ],
             ),
             const SizedBox(
-              width: 200,
+              width: 100,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -223,14 +223,15 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('Reporting 2013-2014',
+                  child: const Text(
+                      'Rapport de DevelopPement durable 2013-2014',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
               ],
             ),
             const SizedBox(
-              width: 200,
+              width: 100,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -241,7 +242,9 @@ class lignePublication extends StatelessWidget {
                         'https://groupesifca.com/wp-content/uploads/2022/07/Rapport_DD_SIFCA_2010_2012.pdf');
                   },
                   child: Image.asset(
-                    'assets/images/pip6.PNG',
+                    'assets/images/okok.JPG',
+                    height: 200,
+                    width: 200,
                   ),
                 ),
                 const SizedBox(
@@ -265,7 +268,8 @@ class lignePublication extends StatelessWidget {
                       },
                     ),
                   ),
-                  child: const Text('Reporting 2010-2012',
+                  child: const Text(
+                      'Rapport de DevelopPement durable 2010-2012',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white)),
                 ),
