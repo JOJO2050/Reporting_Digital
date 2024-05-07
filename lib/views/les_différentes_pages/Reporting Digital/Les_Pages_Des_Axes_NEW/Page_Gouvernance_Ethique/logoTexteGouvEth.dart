@@ -7,8 +7,9 @@ class logoTexteGouvEth extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(width: 170),
+        SizedBox(width: 130),
         _buildIconeTexte(
+          texte4: "Enjeu 1",
           image: 'assets/icons/justice.png',
           texte1: "GOUVERNANCE DÉVELOPPEMENT DURABLE",
           texte2: "ET INTÉGRATION AUX DÉCISIONS STRATÉGIQUES",
@@ -16,6 +17,7 @@ class logoTexteGouvEth extends StatelessWidget {
         ),
         SizedBox(width: 60),
         _buildIconeTexte(
+          texte4: "Enjeu 2",
           image: 'assets/icons/busines.png',
           texte1: "ÉTHIQUE DES AFFAIRES ET",
           texte2: "ACHATS RESPONSABLES",
@@ -23,6 +25,7 @@ class logoTexteGouvEth extends StatelessWidget {
         ),
         SizedBox(width: 60),
         _buildIconeTexte(
+          texte4: "Enjeu 3",
           image: 'assets/icons/diagramme.png',
           texte1: "INTÉGRATION DES NOUVELLES ATTENTES",
           texte2: "DÉVELOPPEMENT DURABLE DES CLIENTS ",
@@ -37,9 +40,18 @@ class logoTexteGouvEth extends StatelessWidget {
     required String texte1,
     required String texte2,
     required String texte3,
+    required String texte4,
   }) {
     return Column(
       children: [
+        Text(
+          texte4,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: Color.fromARGB(255, 224, 203, 9),
+          ),
+        ),
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
@@ -58,7 +70,6 @@ class logoTexteGouvEth extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
-            color: Color.fromARGB(255, 0, 0, 0),
           ),
         ),
         Text(
@@ -66,7 +77,6 @@ class logoTexteGouvEth extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
-            color: Color.fromARGB(255, 0, 0, 0),
           ),
         ),
         Text(
@@ -74,7 +84,6 @@ class logoTexteGouvEth extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
-            color: Color.fromARGB(255, 0, 0, 0),
           ),
         ),
       ],

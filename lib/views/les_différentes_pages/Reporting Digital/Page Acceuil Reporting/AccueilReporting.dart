@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/les_diff%C3%A9rentes_pages/Reporting%20Digital/Page%20Acceuil%20Reporting/page_li%C3%A9_a_reporting_accueil/LigneSlogan.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'page_lié_a_reporting_accueil/Actualité page/Actualité.dart';
 import 'page_lié_a_reporting_accueil/RechercheBarre.dart';
@@ -142,6 +143,7 @@ class _accueilPageReportingState extends State<accueilPageReporting> {
       backgroundColor: Color.fromARGB(255, 136, 103, 54),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(28)),
       onPressed: () {
-        print("Pressed");
+        launch(
+            'https://groupesifca.com/wp-content/uploads/2022/07/dd_sifca_2013_2014.pdf');
       });
 }

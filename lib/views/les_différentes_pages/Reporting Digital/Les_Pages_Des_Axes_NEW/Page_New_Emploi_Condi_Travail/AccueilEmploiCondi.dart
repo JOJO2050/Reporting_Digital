@@ -65,7 +65,7 @@ class _newPageAcueilleEmploiCondiState
                     Divider(height: 2, color: Colors.black, thickness: 0.2),
                     SizedBox(height: 10),
                     SizedBox(child: logoTexteEmploieCondition()),
-                    SizedBox(height: 50),
+                    SizedBox(height: 20),
                     SizedBox(child: lignesTextEmploiCondi()),
 
                     /*  Container(

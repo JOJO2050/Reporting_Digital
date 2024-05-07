@@ -51,7 +51,7 @@ class lignesTextPreserv extends StatelessWidget {
                 ))
           ],
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 15),
         Row(
           children: [
             SizedBox(width: 70),
@@ -63,7 +63,7 @@ class lignesTextPreserv extends StatelessWidget {
                 ))
           ],
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 15),
         Row(
           children: [
             SizedBox(width: 70),
@@ -75,7 +75,7 @@ class lignesTextPreserv extends StatelessWidget {
                 ))
           ],
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 15),
         Row(
           children: [
             SizedBox(width: 70),
@@ -87,7 +87,7 @@ class lignesTextPreserv extends StatelessWidget {
                 ))
           ],
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 15),
         Row(
           children: [
             SizedBox(width: 70),
@@ -99,7 +99,7 @@ class lignesTextPreserv extends StatelessWidget {
                 ))
           ],
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 15),
         Row(
           children: [
             SizedBox(width: 70),
@@ -110,9 +110,6 @@ class lignesTextPreserv extends StatelessWidget {
                   fontSize: 14,
                 ))
           ],
-        ),
-        SizedBox(
-          height: 25,
         ),
       ],
     );

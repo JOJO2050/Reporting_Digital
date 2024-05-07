@@ -53,7 +53,7 @@ class _newPageAcueillePreservState extends State<newPageAcueillePreserv> {
             ),
             Stack(
               children: [
-                Image.asset('assets/images/fond_accueil7.jpg'),
+                Image.asset('assets/images/fond_accueil3.jpg'),
                 const Column(
                   children: [
                     SizedBox(height: 10),

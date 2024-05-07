@@ -61,7 +61,7 @@ class _newPageAcueilleGouvEthState extends State<newPageAcueilleGouvEth> {
                     Divider(height: 2, color: Colors.black, thickness: 0.2),
                     SizedBox(height: 20),
                     SizedBox(child: logoTexteGouvEth()),
-                    SizedBox(height: 50),
+                    SizedBox(height: 20),
                     SizedBox(child: lignesTextGouvEth()),
                   ],
                 ),
