@@ -118,7 +118,7 @@ class _boutonStrategieDdState extends State<boutonStrategieDd> {
       ),
       items: [
         // Éléments du menu déroulant
-        PopupMenuItem(
+        /*  PopupMenuItem(
           child: const Text('Politique DD'),
           onTap: () {
             // Action lorsque l'utilisateur sélectionne un élément du menu
@@ -130,7 +130,7 @@ class _boutonStrategieDdState extends State<boutonStrategieDd> {
               ),
             );
           },
-        ),
+        ), */
         PopupMenuItem(
           child: const Text('Schema de la stratégie (Arbre)'),
           onTap: () {
@@ -153,7 +153,7 @@ class _boutonStrategieDdState extends State<boutonStrategieDd> {
             );
           },
         ),
-        PopupMenuItem(
+        /*    PopupMenuItem(
           child: const Text("Feuille de route"),
           onTap: () {
             Navigator.push(
@@ -163,7 +163,7 @@ class _boutonStrategieDdState extends State<boutonStrategieDd> {
               ),
             );
           },
-        ),
+        ), */
       ],
     );
   }
