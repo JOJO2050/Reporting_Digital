@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../buttonHoverReprting&Accueil/buttonLogin.dart';
 import 'pageDeslanguesReporting.dart';
 
 class firstLigneReporting extends StatelessWidget {
@@ -22,8 +23,10 @@ class firstLigneReporting extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
                     color: Color.fromARGB(255, 255, 255, 255))),
-            const SizedBox(width: 380),
+            const SizedBox(width: 290),
             const SizedBox(child: traductionLangue()),
+            const SizedBox(width: 20),
+            SizedBox(child: ButtonLogin()),
           ],
         ),
       ),

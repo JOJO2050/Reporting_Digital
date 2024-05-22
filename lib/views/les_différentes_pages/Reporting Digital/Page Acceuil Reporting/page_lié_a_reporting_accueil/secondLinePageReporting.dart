@@ -23,16 +23,16 @@ class _secondLigneReportingState extends State<secondLigneReporting> {
         children: [
           SizedBox(child: buttonBusinessModel()),
           const SizedBox(width: 30),
-          SizedBox(
+          /*SizedBox(
             child: boutonStrategieDd(),
           ),
-          const SizedBox(width: 30),
+            const SizedBox(width: 30),
           SizedBox(child: buttonAnalyseMaterialite()),
           const SizedBox(width: 30),
           SizedBox(child: buttonPerformanceEsg()),
           const SizedBox(width: 30),
-          SizedBox(child: buttonConformite()),
-          const SizedBox(width: 30),
+          SizedBox(child: buttonConformite()), */
+          const SizedBox(width: 300),
           SizedBox(child: buttonPublicaion()),
         ],
       ),

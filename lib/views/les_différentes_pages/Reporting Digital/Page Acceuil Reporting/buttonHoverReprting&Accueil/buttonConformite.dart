@@ -154,7 +154,7 @@ class _buttonConformiteState extends State<buttonConformite> {
       ),
       items: [
         PopupMenuItem(
-          child: Text('DUE dialogue'),
+          child: Text('Duediligeance'),
           onTap: () {
             Navigator.push(
               context,
@@ -187,7 +187,7 @@ class _buttonConformiteState extends State<buttonConformite> {
           },
         ),
         PopupMenuItem(
-          child: Text("Indexe (CRS, CRJ, ODD)"),
+          child: Text("Indexe (CRSD, GRI, ODD)"),
           onTap: () {
             Navigator.push(
               context,

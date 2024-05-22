@@ -165,7 +165,7 @@ class _buttonAnalyseMaterialiteState extends State<buttonAnalyseMaterialite> {
           },
         ),
         PopupMenuItem(
-          child: Text("Partie prenante"),
+          child: Text("Parties prenantes"),
           onTap: () {
             Navigator.push(
               context,
@@ -176,7 +176,7 @@ class _buttonAnalyseMaterialiteState extends State<buttonAnalyseMaterialite> {
           },
         ),
         PopupMenuItem(
-          child: Text('R&O (Risque et Opportunité)'),
+          child: Text('R&O (Risques et Opportunités)'),
           onTap: () {
             Navigator.push(
               context,

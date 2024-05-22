@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/les_diff%C3%A9rentes_pages/Reporting%20Digital/Page%20Acceuil%20Reporting/AccueilReporting.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'views/les_différentes_pages/Reporting Digital/Les Pages De Redirection Elements Reporting/Page_Business_Model/Presentation/Présentation.dart';
 import 'views/les_différentes_pages/Reporting Digital/Les Pages De Redirection Elements Reporting/page_Publication/lignePublication.dart';
@@ -8,7 +9,13 @@ import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Ar
 import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Axes Strategiques/AxesStrategiques.dart';
 import 'views/les_différentes_pages/Reporting Digital/Page Acceuil Reporting/Politique DD/Politique.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    url: "https://rahbwetscbirpezuempd.supabase.co",
+    anonKey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhaGJ3ZXRzY2JpcnBlenVlbXBkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU4NzUwNjAsImV4cCI6MjAzMTQ1MTA2MH0.G0NlJSoRVzDBsKjDftqT6N0kI8lijbL1ByrAOUZcEyA",
+  );
   runApp(const MyApp());
 }
 
