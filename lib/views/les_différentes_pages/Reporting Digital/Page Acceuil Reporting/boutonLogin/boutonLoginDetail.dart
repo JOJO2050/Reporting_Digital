@@ -1,31 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
-import '../../../../constant.dart';
 import '../../../Autre_Projet/test.dart';
 import '../boutonRegister/boutonRegisterDetail.dart';
 
-class NewFormulaire extends StatefulWidget {
-  NewFormulaire({super.key});
-
-  @override
-  State<NewFormulaire> createState() => _NewFormulaireState();
-}
-
-class _NewFormulaireState extends State<NewFormulaire> {
-  final TextEditingController _emailController = TextEditingController();
-
-  final TextEditingController _passwordController = TextEditingController();
-
-  bool isLoading = false;
-
-  //  [Connexion utilisateur] Fonctionqui gère la connexion
-  Future<String?> userLogin({
-    required final String email,
-    required final String password,
-  }) async {
-    final response = await supabase.auth
-        .signInWithPassword(email: email, password: password);
-  }
+class NewFormulaire extends StatelessWidget {
+  const NewFormulaire({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +41,6 @@ class _NewFormulaireState extends State<NewFormulaire> {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         TextField(
-          controller: _emailController,
           decoration: InputDecoration(
             hintText: "Email",
             border: OutlineInputBorder(
@@ -77,7 +54,6 @@ class _NewFormulaireState extends State<NewFormulaire> {
         ),
         const SizedBox(height: 10),
         TextField(
-          controller: _passwordController,
           decoration: InputDecoration(
             hintText: "Mot de passe",
             border: OutlineInputBorder(
@@ -91,42 +67,20 @@ class _NewFormulaireState extends State<NewFormulaire> {
           obscureText: true,
         ),
         const SizedBox(height: 10),
-        isLoading
-            ? Container(
-                height: 30,
-                width: 30,
-                decoration: const BoxDecoration(color: Colors.white),
-                child: const Center(
-                  child: CircularProgressIndicator(),
-                ),
-              )
-            : ElevatedButton(
-                onPressed: () async {
-                  setState(() {
-                    isLoading = true;
-                  });
-                  dynamic loginValue = await userLogin(
-                      email: _emailController.text,
-                      password: _passwordController.text);
-                  setState(() {
-                    isLoading = false;
-                  });
-                  if (loginValue != null) {
-                    Navigator.pushReplacementNamed(context, "/publication");
-                  } else {
-                    context.showErrorMessage("Email ou Mot de passe Invalid");
-                  }
-                },
-                style: ElevatedButton.styleFrom(
-                  shape: const StadiumBorder(),
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Colors.purple,
-                ),
-                child: const Text(
-                  "Login",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
-                ),
-              ),
+        ElevatedButton(
+          onPressed: () {
+            // Ajouter la logique de connexion ici
+          },
+          style: ElevatedButton.styleFrom(
+            shape: const StadiumBorder(),
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            backgroundColor: Colors.purple,
+          ),
+          child: const Text(
+            "Login",
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
+        ),
       ],
     );
   }

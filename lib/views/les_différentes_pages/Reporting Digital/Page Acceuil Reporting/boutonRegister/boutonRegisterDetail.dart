@@ -12,6 +12,7 @@ class NewRegister extends StatefulWidget {
 }
 
 class _NewRegisterState extends State<NewRegister> {
+  final supabase = Supabase.instance.client;
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
@@ -93,14 +94,20 @@ class _NewRegisterState extends State<NewRegister> {
         const SizedBox(height: 10),
         ElevatedButton(
           onPressed: () async {
+            print("bouton appuye");
             // Ajouter la logique d'inscription ici
             final sm = ScaffoldMessenger.of(context);
-            final AuthResponse = await supabase.auth.signUp(
-                password: passwordController.text, email: emailController.text);
+            try {
+              final AuthResponse = await supabase.auth.signUp(
+                  password: passwordController.text,
+                  email: emailController.text);
+            } catch (e) {
+              print(e);
+            }
 
-            sm.showSnackBar(SnackBar(
+            /*   sm.showSnackBar(SnackBar(
                 content:
-                    Text("Vous êtes connecté : ${AuthResponse.user!.email!}")));
+                    Text("Vous êtes inscrit: ${AuthResponse.user!.email!}"))); */
           },
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
